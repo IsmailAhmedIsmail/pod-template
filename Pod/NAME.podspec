@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.summary          = 'A short description of ${POD_NAME}.'
 
   s.homepage         = 'https://github.com/elmenus/ios-app.git'
-  s.author           = { '${USER_NAME}' => '${USER_EMAIL}' }
-  s.source           = { :git => 'https://github.com/${USER_NAME}/${POD_NAME}.git', :tag => s.version.to_s }
+  s.author           = { 'ios-team' => 'ios-team@elmenus.com' }
+  s.source           = { :git => 'https://github.com/elmenus/ios-app.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'
 
