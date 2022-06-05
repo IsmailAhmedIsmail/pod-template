@@ -220,7 +220,7 @@ module Pod
       'Example/Podfile'
     end
 
-    def bundle_token_path]
+    def bundle_token_path
         'Pod/Pod/Classes/Utils/BundleToken.swift'
     end
     #----------------------------------------#
