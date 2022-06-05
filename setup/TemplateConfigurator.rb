@@ -176,7 +176,7 @@ module Pod
     end
 
     def rename_classes_folder
-      FileUtils.mv "Pof/Pod", "Pod/" + @pod_name
+      FileUtils.mv "Pod/Pod", "Pod/" + @pod_name
       FileUtils.mv "Pod", @pod_name
     end
 
