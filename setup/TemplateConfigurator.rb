@@ -124,7 +124,7 @@ module Pod
     end
 
     def replace_variables_in_files
-      file_names = ['POD_LICENSE', 'POD_README.md', 'NAME.podspec', '.travis.yml', podfile_path, bundle_token_path]
+      file_names = ['Pod/NAME.podspec', '.travis.yml', podfile_path, bundle_token_path]
       file_names.each do |file_name|
         text = File.read(file_name)
         text.gsub!("${POD_NAME}", @pod_name)
@@ -174,10 +174,11 @@ module Pod
     def rename_template_files
       FileUtils.mv "POD_README.md", "README.md"
       FileUtils.mv "POD_LICENSE", "LICENSE"
-      FileUtils.mv "Pod/NAME.podspec", "#{pod_name}/#{pod_name}.podspec"
+      FileUtils.mv "Pod/NAME.podspec", "Pod/#{pod_name}.podspec"
     end
 
     def rename_classes_folder
+      FileUtils.mv "Pof/Pod", "Pod/" + @pod_name
       FileUtils.mv "Pod", @pod_name
     end
 
@@ -220,7 +221,7 @@ module Pod
     end
 
     def bundle_token_path]
-        @podname + '/' + @podname + '/Classes/Utils/BundleToken.swift'
+        'Pod/Pod/Classes/Utils/BundleToken.swift'
     end
     #----------------------------------------#
   end
