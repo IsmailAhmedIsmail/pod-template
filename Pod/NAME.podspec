@@ -17,10 +17,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = '${POD_NAME}/Classes/**/*.*'
+  s.source_files = '${POD_NAME}/Classes/**/*.*', 'fix_project_structure'
 
   s.resource_bundles = {
-    '${POD_NAME}' => ['${POD_NAME}/Assets/**/*', '${POD_NAME}/Classes/**/*.xib']
+    '${POD_NAME}' => ['${POD_NAME}/Assets/**/*', '${POD_NAME}/Classes/**/*.xib', 'fix_project_structure']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
