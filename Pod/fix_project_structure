@@ -1,0 +1,1 @@
+This file is kept to fix the pod folders and groups structure, without this file. The pod will appear in Xcode without any folders, just flat files below each others without any folders. Also, without this file, any new added group will be created on the root folder of the pod not inside the classes or assets folders. SO PLEASE DON'T DELETE THIS FILE.
