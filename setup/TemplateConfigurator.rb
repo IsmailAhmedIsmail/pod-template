@@ -176,7 +176,6 @@ module Pod
     end
 
     def rename_classes_folder
-      FileUtils.mv "Pod/Pod", "Pod/" + @pod_name
       FileUtils.mv "Pod", @pod_name
     end
 
@@ -219,7 +218,7 @@ module Pod
     end
 
     def bundle_token_path
-        'Pod/Pod/Classes/Utils/BundleToken.swift'
+        'Pod/Classes/Utils/BundleToken.swift'
     end
     #----------------------------------------#
   end
